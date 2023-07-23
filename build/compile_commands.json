@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/pawel/CVprojects/endless-run-game/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/endless-run-game.dir/src/main.cpp.o -c /home/pawel/CVprojects/endless-run-game/src/main.cpp",
+  "file": "/home/pawel/CVprojects/endless-run-game/src/main.cpp"
+}
+]
