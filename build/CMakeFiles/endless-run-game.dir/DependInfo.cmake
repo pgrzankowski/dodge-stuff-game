@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/pawel/CVprojects/endless-run-game/src/Entity.cpp" "CMakeFiles/endless-run-game.dir/src/Entity.cpp.o" "gcc" "CMakeFiles/endless-run-game.dir/src/Entity.cpp.o.d"
+  "/home/pawel/CVprojects/endless-run-game/src/RenderWindow.cpp" "CMakeFiles/endless-run-game.dir/src/RenderWindow.cpp.o" "gcc" "CMakeFiles/endless-run-game.dir/src/RenderWindow.cpp.o.d"
   "/home/pawel/CVprojects/endless-run-game/src/main.cpp" "CMakeFiles/endless-run-game.dir/src/main.cpp.o" "gcc" "CMakeFiles/endless-run-game.dir/src/main.cpp.o.d"
   )
 

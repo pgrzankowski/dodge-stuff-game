@@ -1,13 +1,17 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(endless-run-game VERSION 0.1.0 LANGUAGES C CXX)
 
-include(CTest)
-enable_testing()
+include_directories(include)
 
-add_executable(endless-run-game src/main.cpp)
+set(SOURCE_FILES
+    src/main.cpp
+    src/RenderWindow.cpp
+    src/Entity.cpp)
 
-target_link_libraries(endless-run-game SDL2main SDL2 GL)
+add_executable(endless-run-game ${SOURCE_FILES})
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+INCLUDE(FindPkgConfig)
+PKG_SEARCH_MODULE(SDL2 REQUIRED sdl2)
+PKG_SEARCH_MODULE(SDL2IMAGE REQUIRED SDL2_image>=2.0.0)
+INCLUDE_DIRECTORIES(${SDL2_INCLUDE_DIRS} ${SDL2IMAGE_INCLUDE_DIRS})
+TARGET_LINK_LIBRARIES(endless-run-game ${SDL2_LIBRARIES} ${SDL2IMAGE_LIBRARIES})

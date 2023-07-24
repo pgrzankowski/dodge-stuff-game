@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/pawel/CVprojects/endless-run-game/include -I/usr/include/SDL2
 
 CXX_FLAGS = -g
 

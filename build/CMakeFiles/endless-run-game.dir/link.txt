@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/endless-run-game.dir/src/main.cpp.o -o endless-run-game  -lSDL2main -lSDL2 -lGL 
+/usr/bin/g++ -g -rdynamic CMakeFiles/endless-run-game.dir/src/main.cpp.o CMakeFiles/endless-run-game.dir/src/RenderWindow.cpp.o CMakeFiles/endless-run-game.dir/src/Entity.cpp.o -o endless-run-game  -lSDL2 -lSDL2_image -lSDL2 -lSDL2_image 
