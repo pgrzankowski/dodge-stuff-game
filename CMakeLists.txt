@@ -6,7 +6,8 @@ include_directories(include)
 set(SOURCE_FILES
     src/main.cpp
     src/RenderWindow.cpp
-    src/Entity.cpp)
+    src/Entity.cpp
+    src/Math.cpp)
 
 add_executable(endless-run-game ${SOURCE_FILES})
 

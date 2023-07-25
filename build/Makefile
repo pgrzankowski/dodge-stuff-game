@@ -173,6 +173,30 @@ src/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/endless-run-game.dir/build.make CMakeFiles/endless-run-game.dir/src/Entity.cpp.s
 .PHONY : src/Entity.cpp.s
 
+src/Math.o: src/Math.cpp.o
+.PHONY : src/Math.o
+
+# target to build an object file
+src/Math.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endless-run-game.dir/build.make CMakeFiles/endless-run-game.dir/src/Math.cpp.o
+.PHONY : src/Math.cpp.o
+
+src/Math.i: src/Math.cpp.i
+.PHONY : src/Math.i
+
+# target to preprocess a source file
+src/Math.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endless-run-game.dir/build.make CMakeFiles/endless-run-game.dir/src/Math.cpp.i
+.PHONY : src/Math.cpp.i
+
+src/Math.s: src/Math.cpp.s
+.PHONY : src/Math.s
+
+# target to generate assembly for a file
+src/Math.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endless-run-game.dir/build.make CMakeFiles/endless-run-game.dir/src/Math.cpp.s
+.PHONY : src/Math.cpp.s
+
 src/RenderWindow.o: src/RenderWindow.cpp.o
 .PHONY : src/RenderWindow.o
 
@@ -235,6 +259,9 @@ help:
 	@echo "... src/Entity.o"
 	@echo "... src/Entity.i"
 	@echo "... src/Entity.s"
+	@echo "... src/Math.o"
+	@echo "... src/Math.i"
+	@echo "... src/Math.s"
 	@echo "... src/RenderWindow.o"
 	@echo "... src/RenderWindow.i"
 	@echo "... src/RenderWindow.s"

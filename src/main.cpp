@@ -1,6 +1,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <iostream>
+#include <vector>
+#include <memory>
 
 #include "../include/RenderWindow.hpp"
 #include "../include/Entity.hpp"
@@ -19,7 +21,11 @@ int main(int argc, char* argv[]){
 
     SDL_Texture* grassTexture = window.loadTexture("../res/gfx/ground_tile.png");
 
-    Entity platform0(0, 720 - 64, grassTexture);
+    std::vector<std::unique_ptr<Entity>> entities;
+
+    for (int i = 0; i < 20; i++){
+        entities.push_back(std::make_unique<Entity>(Vector2f(i * 64, 720 - 64), grassTexture));
+    }
 
     bool gameRunning = true;
     SDL_Event event;
@@ -31,7 +37,12 @@ int main(int argc, char* argv[]){
         }
 
         window.clear();
-        window.render(platform0);
+        
+        for (auto& entity : entities){
+            window.render(*entity);
+        }
+
+
         window.display();
     }
 
