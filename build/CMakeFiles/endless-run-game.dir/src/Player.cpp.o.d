@@ -1,8 +1,10 @@
-CMakeFiles/endless-run-game.dir/src/main.cpp.o: \
- /home/pawel/CVprojects/endless-run-game/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
- /usr/include/SDL2/SDL_config.h \
+CMakeFiles/endless-run-game.dir/src/Player.cpp.o: \
+ /home/pawel/CVprojects/endless-run-game/src/Player.cpp \
+ /usr/include/stdc-predef.h \
+ /home/pawel/CVprojects/endless-run-game/src/../include/Player.hpp \
+ /home/pawel/CVprojects/endless-run-game/src/../include/Entity.hpp \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/x86_64-linux-gnu/sys/types.h \
@@ -214,6 +216,7 @@ CMakeFiles/endless-run-game.dir/src/main.cpp.o: \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
+ /home/pawel/CVprojects/endless-run-game/src/../include/Math.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/bits/stringfwd.h \
@@ -306,9 +309,4 @@ CMakeFiles/endless-run-game.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h \
- /home/pawel/CVprojects/endless-run-game/src/../include/RenderWindow.hpp \
- /home/pawel/CVprojects/endless-run-game/src/../include/Entity.hpp \
- /home/pawel/CVprojects/endless-run-game/src/../include/Math.hpp \
- /home/pawel/CVprojects/endless-run-game/src/../include/Utils.hpp \
- /home/pawel/CVprojects/endless-run-game/src/../include/Player.hpp
+ /usr/include/c++/11/pstl/execution_defs.h

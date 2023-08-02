@@ -18,5 +18,10 @@
   "directory": "/home/pawel/CVprojects/endless-run-game/build",
   "command": "/usr/bin/g++  -I/home/pawel/CVprojects/endless-run-game/include -I/usr/include/SDL2 -g -o CMakeFiles/endless-run-game.dir/src/Math.cpp.o -c /home/pawel/CVprojects/endless-run-game/src/Math.cpp",
   "file": "/home/pawel/CVprojects/endless-run-game/src/Math.cpp"
+},
+{
+  "directory": "/home/pawel/CVprojects/endless-run-game/build",
+  "command": "/usr/bin/g++  -I/home/pawel/CVprojects/endless-run-game/include -I/usr/include/SDL2 -g -o CMakeFiles/endless-run-game.dir/src/Player.cpp.o -c /home/pawel/CVprojects/endless-run-game/src/Player.cpp",
+  "file": "/home/pawel/CVprojects/endless-run-game/src/Player.cpp"
 }
 ]

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/endless-run-game.dir/src/Entity.cpp.o.d"
   "CMakeFiles/endless-run-game.dir/src/Math.cpp.o"
   "CMakeFiles/endless-run-game.dir/src/Math.cpp.o.d"
+  "CMakeFiles/endless-run-game.dir/src/Player.cpp.o"
+  "CMakeFiles/endless-run-game.dir/src/Player.cpp.o.d"
   "CMakeFiles/endless-run-game.dir/src/RenderWindow.cpp.o"
   "CMakeFiles/endless-run-game.dir/src/RenderWindow.cpp.o.d"
   "CMakeFiles/endless-run-game.dir/src/main.cpp.o"
