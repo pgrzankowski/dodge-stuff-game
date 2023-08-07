@@ -1,5 +1,0 @@
-/home/pawel/CVprojects/endless-run-game/build/CMakeFiles/endless-run-game.dir
-/home/pawel/CVprojects/endless-run-game/build/CMakeFiles/package.dir
-/home/pawel/CVprojects/endless-run-game/build/CMakeFiles/package_source.dir
-/home/pawel/CVprojects/endless-run-game/build/CMakeFiles/edit_cache.dir
-/home/pawel/CVprojects/endless-run-game/build/CMakeFiles/rebuild_cache.dir
