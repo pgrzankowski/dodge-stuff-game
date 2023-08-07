@@ -29,6 +29,8 @@ int main(int argc, char* argv[]){
         entities.push_back(std::make_unique<Entity>(Vector2f(i * 64, 720 - 64), grassTexture));
     }
 
+    entities.push_back(std::make_unique<Entity>(Vector2f(300, 300), grassTexture));
+
     // Get texture for player
     SDL_Texture* playerTexture = window.loadTexture("../res/gfx/player.png");
     // Create player

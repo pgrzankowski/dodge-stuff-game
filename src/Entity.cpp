@@ -22,7 +22,7 @@ const SDL_Rect& Entity::getCurrentFrame(){
 }
 
 const SDL_Rect& Entity::getHitbox(){
-    return hitbox;
+    return hitbox;    
 }
 
 void Entity::setTexture(SDL_Texture* p_texture){

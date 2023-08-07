@@ -23,7 +23,7 @@ void Player::moveRight(){
 
 void Player::jump(){
     if (!inAir){
-        velocity.y = -10;
+        velocity.y = -20;
         isJumping = true;
     }
 }
@@ -35,7 +35,7 @@ void Player::stand(){
 }
 
 bool Player::isOn(std::unique_ptr<Entity>& p_entity){
-    if (this->isColliding(p_entity) && hitbox.y + hitbox.h <= p_entity->getHitbox().y){
+    if (this->isColliding(p_entity) && position.y <= p_entity->getPosition().y && velocity.y >= 0){
         return true;
     }
     return false;
@@ -48,7 +48,7 @@ void Player::update(std::vector<std::unique_ptr<Entity>>& p_entities){
     position.y += velocity.y;
     this->calculateHitbox();
     for (auto& p_entity : p_entities) {
-        if (this->isColliding(p_entity)){
+        if (this->isOn(p_entity)){
             position.y = p_entity->getPosition().y - hitbox.h;
             inAir = false;
             break;
@@ -58,6 +58,11 @@ void Player::update(std::vector<std::unique_ptr<Entity>>& p_entities){
     }
     if (inAir && velocity.y < maxFallSpeed){
         velocity.y += 0.5f;
+    }
+    if (position.x < 0) {
+        position.x = 0;
+    } else if (position.x > 1280 - hitbox.w) {
+        position.x = 1280 - hitbox.w;
     }
 
 
