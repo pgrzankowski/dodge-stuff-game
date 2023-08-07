@@ -34,15 +34,14 @@ void Player::stand(){
         velocity.y = 0;
 }
 
+// TODO: Modify this so player isn't teleported on platform
 bool Player::isOn(std::unique_ptr<Entity>& p_entity){
-    if (this->isColliding(p_entity) && position.y <= p_entity->getPosition().y && velocity.y >= 0){
+    if (this->isColliding(p_entity) && velocity.y >= 0){
         return true;
     }
     return false;
 }
 
-
-//TODO: Refactor this to use the Entity::update() method
 void Player::update(std::vector<std::unique_ptr<Entity>>& p_entities){
     position.x += velocity.x;
     position.y += velocity.y;
@@ -64,11 +63,14 @@ void Player::update(std::vector<std::unique_ptr<Entity>>& p_entities){
     } else if (position.x > 1280 - hitbox.w) {
         position.x = 1280 - hitbox.w;
     }
+    if (position.y < 0) {
+        position.y = 0;
+        velocity.y = 0;
+    }
 
 
 }
 
-//TODO: Refactor this to use the Entity::checkCollisions() method
 SDL_bool Player::isColliding(std::unique_ptr<Entity>& p_entity){
     return SDL_HasIntersection(&hitbox, &p_entity->getHitbox());
 }
